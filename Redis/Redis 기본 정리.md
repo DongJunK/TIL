@@ -6,7 +6,7 @@
 
  키-값 기반이기 때문에 키를 통해 값을 바로 가져올 수 있고, 디스크에 데이터를 쓰는 구조가 아니라 메모리에서 데이터를 처리하기 때문에 속도가 빠르다는 장점이 있습니다.
 
-## **Redis의 특징**
+## Redis의 특징
 
 - Key-Value Store: 데이터를 지칭하는 Key와 데이터를 저장하는 Value의 구조로 데이터를 저장하는 형태
 - 많은 자료구조(Collection)을 제공합니다.
@@ -14,7 +14,7 @@
 - Cluster 모드를 제공합니다.
 - Open Source(BSD 3 License)
 
-## **Redis data types**
+## Redis data types
 
 Redis는 기본적으로 자료구조가 Hash Table입니다.
 
@@ -71,7 +71,7 @@ Redis는 기본적으로 자료구조가 Hash Table입니다.
 - Skiplist 자료구조를 이용합니다.
     - Skiplist: Log(N)의 검색 속도를 가지는 리스트 자료구조
 
-### **Redis is Single Thread**
+### Redis is Single Thread
 
 Redis 4.0 부터는 기본적으로 4개의 쓰레드로 동작하지만 일반 명령어를 처리하는 메인쓰레드 1개와 별도의 시스템 명령을 사용하는 전용 sub thread 3개로써, 실제로 사용자가 사용하는 명령어들을 싱글쓰레드로 동작합니다.
 
@@ -85,5 +85,7 @@ Redis 4.0 부터는 기본적으로 4개의 쓰레드로 동작하지만 일반 
     - 위 명령어들은 아래와 같이 수정하여 효율적으로 사용할 수 있음
         - keys: scan을 통해 순회 탐색으로 전체 key 조회
         - seem: sscan을 통한 순회 탐색으로 전체 member 조회
+
+ 
 
 출처: The RED : 백엔드 에센셜 : 대용량 서비스를 위한 아키텍처 with Redis by 강대명
