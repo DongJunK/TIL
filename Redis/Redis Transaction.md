@@ -49,7 +49,7 @@ UNWATCH mykey
 ```
 참고로, 보통 여러 클라이언트가 서로 다른 키에 액세스하기 때문에 키에 대한 충돌이 발생할 가능성이 낮습니다.
 
-참고
-https://redis.io/docs/manual/transactions/
-https://www.techopedia.com/definition/16455/transaction-databases
-https://stackexchange.github.io/StackExchange.Redis/Transactions.html
+[참고]
+- https://redis.io/docs/manual/transactions/
+- https://www.techopedia.com/definition/16455/transaction-databases
+- https://stackexchange.github.io/StackExchange.Redis/Transactions.html
